@@ -1,0 +1,62 @@
+/* Estilo base para os cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none !important; /* Remove a borda padrão */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o card */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de levantar o card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-text i {
+    color: #ffc107; /* Cor das estrelas (amarelo) */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor do botão */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para o ícone de bookmark */
+.bi-bookmark-plus {
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.bi-bookmark-plus:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}

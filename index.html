@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/barra-pesquisa.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>SkyRota</title>
+</head>
+
+<body>
+    <!--Cabeçalho do site-->
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="index.html">
+                    <img class="logotipo" src="imagens/logotipo.png" alt="logotipo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/clientes.html">Clientes</a></li>
+                        <li><a href="pages/pacotes.html">Pacotes</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="botao">
+                    <a href="#" class="entrar">Entrar</a>
+                    <a href="#" class="inscreva-se">Inscreva-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <h1>DESCUBRA UM <span>NOVO MUNDO</span> COM SKYROTA</h1>
+    </section>
+
+
+    <!--Barra de pesquisa-->
+    <div class="search-bar">
+        <div class="search-container">
+            <div class="search-field">
+                <label for="destino">Para onde que ir?</label>
+                <input type="text" id="destino" placeholder="Destino">
+            </div>
+            <div class="search-field">
+                <label for="data">Quando quer ir?</label>
+                <input type="date" id="data">
+            </div>
+            <div class="search-field">
+                <label for="quantidade">Quantas pessoas?</label>
+                <select id="quantidade">
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                    <option value="5+">5+ Pessoas</option>
+                </select>
+            </div>
+            <button class="search-button">
+                <i class="bi bi-search"></i>Buscar</button>
+        </div>
+    </div>
+
+    <!--Destinos-->
+    <h1 class="text-center">Destinos Nacionais</h1>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/RJ.jpg" class="card-img-top" alt="rio-janeiro">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Rio de Janeiro</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (345 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Rio de Janeiro</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 360,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/sao-paulo.jpg" class="card-img-top" alt="sao-paulo">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">São Paulo</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (253 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">São Paulo</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 270,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/recife.jpg" class="card-img-top" alt="recife">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Recife</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (231 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Recife</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 300,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/gramado.jpg" class="card-img-top" alt="gramado">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Gramado</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (123 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">R. Grande do Sul</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 320,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <h1 class="text-center" >Destinos Internacionais</h1>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/roma.jpg" class="card-img-top" alt="roma">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Roma</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (345 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Itália</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 560,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/lisboa.jpg" class="card-img-top" alt="lisboa">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Lisboa</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (243 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Portugal</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 470,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/tokyo.jpeg" class="card-img-top" alt="tokyo">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Tokyo</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (231 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Japão</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 400,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card border-0 shadow" style="max-width: 18rem;">
+                    <img src="imagens/imagens-lugares/zurich.jpg" class="card-img-top" alt="zurich">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h4 class="card-title">Zurich</h4>
+                                <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    (123 reviews)
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <i class="bi bi-bookmark-plus fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center">
+                        <div class="col-4">
+                            <i class="bi bi-geo-alt">Suiça</i>
+                        </div>
+                        <div class="col-8">
+                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 670,00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--Rodapé do site-->
+    <footer class="text-center text-white py-3 mt-5">
+        <img src="imagens/logotipo.png" alt="logotipo" height="30">
+        <p class="mb-0">Copyright &copy; - SkyRota - Todos os direitos reservados - 2025.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
