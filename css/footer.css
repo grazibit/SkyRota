@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    margin-top: auto; 
+    width: 100%;
+}
+
+footer a {
+    color: #333; 
+    font-size: 20px; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+footer a:hover {
+    color: #0a5679; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.image-container img {
+    max-width: 100px; 
+    height: auto;
+}
+
+
+@media (max-width: 767.98px) {
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    footer img {
+        margin-bottom: 10px;
+    }
+}

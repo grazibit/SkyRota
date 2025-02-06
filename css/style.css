@@ -46,7 +46,6 @@ header.rolagem a {
 header .logotipo {
     height: 40px;
     font-size: 20px;
-    color: #fff;
 }
 
 header ul {
@@ -61,44 +60,47 @@ header ul li {
     margin: 0 40px;
 }
 
-header ul li a {
+header ul li, .nav-link{
     color: #fff;
     text-decoration: none;
 }
 
 .banner {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../imagens/fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 32px; 
+    background-blend-mode: darken;
 }
 
 .banner h1 {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
-    color: #333;
+    color: #fff; 
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-top: 64px; 
 }
 
 .banner h1 span {
     display: block;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: normal;
     color: #666;
 }
 
 .entrar, .inscreva-se {
-    padding: 0.5rem 1.5rem;
+    padding: 8px 24px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none; 
     transition: background-color 0.3s ease;
     display: inline-block; 
@@ -122,4 +124,52 @@ header ul li a {
 
 .inscreva-se:hover {
     background-color: #20252b;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse.show {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .navbar-collapse.show .nav-link {
+        color: #000; 
+    }
+
+    .botao {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        margin-top: 10px; 
+        width: 100%; 
+    }
+
+    .navbar-collapse.show .botao a {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none; 
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:hover {
+        box-shadow: none;
+    }
+
+    .navbar-collapse.show .entrar {
+        background-color: #20252b; 
+        color: #fff; 
+        border: 1px solid #20252b; 
+    }
+
+    .navbar-collapse.show .entrar:hover {
+        background-color: #fff;
+        color: #20252b;
+        border: 1px solid #20252b;
+    }
 }

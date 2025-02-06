@@ -11,66 +11,130 @@
     <link rel="stylesheet" href="css/barra-pesquisa.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/descricao.css">
+    <link rel="icon" href="imagens/log.png" type="image/x-icon">
     <title>SkyRota</title>
 </head>
 
 <body>
-    <!--Cabeçalho do site-->
+    <!--Cabeçalho-->
     <header id="header">
-        <div class="container">
-            <div class="flex">
-                <a href="index.html">
-                    <img class="logotipo" src="imagens/logotipo.png" alt="logotipo">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container flex">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/logotipo.png" alt="logotipo" class="logotipo">
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="pages/clientes.html">Clientes</a></li>
-                        <li><a href="pages/pacotes.html">Pacotes</a></li>
-                        <li><a href="pages/contato.html">Contato</a></li>
+
+                <!-- Botão pra resposividade-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/pacotes.html">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contato.html">Contato</a>
+                        </li>
                     </ul>
-                </nav>
-                <div class="botao">
-                    <a href="#" class="entrar">Entrar</a>
-                    <a href="#" class="inscreva-se">Inscreva-se</a>
+
+                    <!-- Botões Entrar e Inscreva-se -->
+                    <div class="d-flex botao">
+                        <a href="#" class="entrar me-2">Entrar</a>
+                        <a href="#" class="inscreva-se">Inscreva-se</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
+
     <section class="banner">
+        <!--Barra de pesquisa-->
+        <div class="search-bar">
+            <div class="search-container">
+                <div class="search-field">
+                    <label for="destino">Para onde que ir?</label>
+                    <input type="text" id="destino" placeholder="Destino">
+                </div>
+                <div class="search-field">
+                    <label for="data">Quando quer ir?</label>
+                    <input type="date" id="data">
+                </div>
+                <div class="search-field">
+                    <label for="quantidade">Quantas pessoas?</label>
+                    <select id="quantidade">
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5+">5+ Pessoas</option>
+                    </select>
+                </div>
+                <button class="search-button">
+                    <i class="bi bi-search"></i>Buscar</button>
+            </div>
+        </div>
         <h1>DESCUBRA UM <span>NOVO MUNDO</span> COM SKYROTA</h1>
     </section>
 
+    <div class="container my-5">
+        <h1 class="text-center mb-4 text-white">Porque Escolher o SkyRota?</h1>
+        <p class="text-center lead mb-5 text-white">
+            Viajar é mais do que apenas sair de casa; é sobre explorar novos horizontes, viver experiências
+            inesquecíveis e criar memórias para toda a vida. No <span class="fw-bold text-secondary">SkyRota</span>,
+            transformamos o planejamento da sua viagem em algo simples, rápido e totalmente personalizado.
+        </p>
 
-    <!--Barra de pesquisa-->
-    <div class="search-bar">
-        <div class="search-container">
-            <div class="search-field">
-                <label for="destino">Para onde que ir?</label>
-                <input type="text" id="destino" placeholder="Destino">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-compass display-4 text-primary mb-3"></i>
+                    <h4>Múltiplos Destinos</h4>
+                    <p class="text-muted">
+                        Desde praias paradisíacas até aventuras urbanas, temos opções para todos os gostos.
+                    </p>
+                </div>
             </div>
-            <div class="search-field">
-                <label for="data">Quando quer ir?</label>
-                <input type="date" id="data">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-piggy-bank display-4 text-primary mb-3"></i>
+                    <h4>Ofertas Exclusivas</h4>
+                    <p class="text-muted">
+                        Pacotes especiais e promoções que você não encontra em nenhum outro lugar.
+                    </p>
+                </div>
             </div>
-            <div class="search-field">
-                <label for="quantidade">Quantas pessoas?</label>
-                <select id="quantidade">
-                    <option value="1">1 Pessoa</option>
-                    <option value="2">2 Pessoas</option>
-                    <option value="3">3 Pessoas</option>
-                    <option value="4">4 Pessoas</option>
-                    <option value="5+">5+ Pessoas</option>
-                </select>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3 shadow-sm">
+                    <i class="bi bi-patch-check display-4 text-primary mb-3"></i>
+                    <h4>Certificada</h4>
+                    <p class="text-muted">
+                        Parcerias com as melhores companhias para garantir sua viagem sem preocupações.
+                    </p>
+                </div>
             </div>
-            <button class="search-button">
-                <i class="bi bi-search"></i>Buscar</button>
         </div>
     </div>
 
     <!--Destinos-->
-    <h1 class="text-center">Destinos Nacionais</h1>
+    <h1 class="text-center text-white">Destinos Nacionais</h1>
+    <p class="text-center lead mb-5 text-white">
+        Explore as belezas do nosso país! De praias paradisíacas a cidades históricas, descubra destinos
+        incríveis que mostram toda a diversidade e riqueza cultural do Brasil.
+    </p>
     <div class="container p-5">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3">
@@ -85,12 +149,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    (345 reviews)
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    (234 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -99,8 +160,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Rio de Janeiro</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 360,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 360,00</a>
                         </div>
                     </div>
                 </div>
@@ -118,12 +179,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (253 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -131,8 +189,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">São Paulo</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 270,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 270,00</a>
                         </div>
                     </div>
                 </div>
@@ -150,12 +208,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (231 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -163,8 +218,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Recife</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 300,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 300,00</a>
                         </div>
                     </div>
                 </div>
@@ -178,25 +233,22 @@
                             <div class="col-10">
                                 <h4 class="card-title">Gramado</h4>
                                 <p class="card-text">
+                                    <i class="bi bi-star-fill text-warning"> </i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (123 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
                     <div class="row align-items-center text-center">
                         <div class="col-4">
-                            <i class="bi bi-geo-alt">R. Grande do Sul</i>
+                            <i class="bi bi-geo-alt">Rio G. do Sul</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 320,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 320,00</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +257,11 @@
     </div>
     </div>
 
-    <h1 class="text-center" >Destinos Internacionais</h1>
+    <h1 class="text-center text-white">Destinos Internacionais</h1>
+    <p class="text-center lead mb-5 text-white">
+        Descubra os destinos mais fascinantes ao redor do mundo! Explore culturas diferentes, visite
+        pontos turísticos icônicos e viva experiências inesquecíveis em cada canto do planeta.
+    </p>
     <div class="container p-5">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3">
@@ -220,12 +276,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (345 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -234,8 +287,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Itália</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 560,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 560,00</a>
                         </div>
                     </div>
                 </div>
@@ -253,12 +306,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (243 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -266,8 +316,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Portugal</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 470,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 470,00</a>
                         </div>
                     </div>
                 </div>
@@ -285,12 +335,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (231 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -298,8 +345,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Japão</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 400,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 400,00</a>
                         </div>
                     </div>
                 </div>
@@ -317,12 +364,9 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
                                     (123 reviews)
                                 </p>
-                            </div>
-                            <div class="col-2">
-                                <i class="bi bi-bookmark-plus fs-2"></i>
                             </div>
                         </div>
                     </div>
@@ -330,8 +374,8 @@
                         <div class="col-4">
                             <i class="bi bi-geo-alt">Suiça</i>
                         </div>
-                        <div class="col-8">
-                            <a href="#" class="btn btn-primary p-4 w-100 rounded">R$ 670,00</a>
+                        <div class="col-8 d-flex">
+                            <a href="#" class="btn btn-primary p-3 ms-auto">R$ 670,00</a>
                         </div>
                     </div>
                 </div>
@@ -340,14 +384,30 @@
     </div>
     </div>
 
-
-
-
+    <div class="image-container">
+        <img src="imagens/image 10.png" alt="expedia"> <img src="imagens/image 9.png" alt="airbnb">
+        <img src="imagens/image 8 (1).png" alt="booking"> <img src="imagens/image 6 (1).png" alt="tripadvisor">
+    </div>
 
     <!--Rodapé do site-->
-    <footer class="text-center text-white py-3 mt-5">
-        <img src="imagens/logotipo.png" alt="logotipo" height="30">
-        <p class="mb-0">Copyright &copy; - SkyRota - Todos os direitos reservados - 2025.</p>
+    <footer class="bg-white text-center text-dark py-3 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="imagens/logotipo.png" alt="logotipo" height="30">
+                </div>
+
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="mb-0">Copyright &copy; - SkyRota - Todos os direitos reservados - 2025.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
