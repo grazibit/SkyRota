@@ -2,7 +2,7 @@
 Plataforma para encontrar e reservar destinos de viagem de forma rápida e intuitiva.
 
 ## 🚀 Pitch
-https://drive.google.com/file/d/1RxUv7l438rJc7uRufmA-KnE-PDECS03i/view?usp=drivesdk
+link do vídeo:  https://drive.google.com/file/d/1RxUv7l438rJc7uRufmA-KnE-PDECS03i/view?usp=drivesdk
 
 ## 🛠️ Tecnologias Utilizadas  
 - HTML, CSS e JavaScript  
