@@ -1,5 +1,5 @@
 .search-bar {
-    margin-top: 16px; /* Ajuste conforme necessário */
+    margin-top: 16px; 
 }
 
 .search-container {
@@ -29,10 +29,10 @@
 }
 
 .search-field input, .search-field select {
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border: 1px solid #ddd;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
     width: 100%;
@@ -43,7 +43,7 @@
 }
 
 .search-button {
-    padding: 0.5rem 1.5rem;
+    padding: 8px 24px;
     background-color: #3899c1;
     color: white;
     border: none;
@@ -51,7 +51,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
     transition: background-color 0.3s ease;
     white-space: nowrap; 
 }
@@ -61,13 +61,13 @@
 }
 
 .search-button i {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
     .search-container {
         flex-direction: column; 
-        gap: 0.5rem; 
+        gap: 8px; 
         width: 95%; 
         margin-top: 150px;
     }

@@ -46,9 +46,9 @@
 }
 
 @media (max-width: 768px) {
-    
+
     .card {
-        margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+        margin-bottom: 20px;
     }
 
-    }
+}
