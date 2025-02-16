@@ -3,7 +3,7 @@
     width: 900px;
     background: white;
     border-radius: 15px;
-    overflow: hidden;
+    overflow: auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -45,7 +45,7 @@ h2 span {
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -88,13 +88,12 @@ h2 span {
     color: #777;
 }
 
-/* Inputs */
 .input-group {
     display: flex;
     align-items: center;
     background: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-bottom: 10px;
 }
 
@@ -127,20 +126,19 @@ h2 span {
     text-decoration: underline;
 }
 
-/* Botão Login */
 .login-btn {
     width: 100%;
     padding: 10px;
-    background:  #3899c1;
+    background: #31576f ;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
 }
 
 .login-btn:hover {
-    background:  #0056b3;
+    background: #4b6b8d ;
 }
 
 p {
@@ -157,3 +155,53 @@ p a {
 p a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {  
+    .container {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 0;
+        margin-bottom: 20px;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    .image-container img {
+        width: 100%;
+        border-radius: 0; 
+    }
+
+    .login-container {
+        padding: 20px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .google,
+    .facebook {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .input-group {
+        padding: 12px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .options label {
+        margin-bottom: 10px;
+    }
+  }

@@ -39,12 +39,12 @@
 }
 
 .search-field input:focus, .search-field select:focus {
-    border-color: #007bff;
+    border-color: #006eff;
 }
 
 .search-button {
     padding: 8px 24px;
-    background-color: #3899c1;
+    background-color:   #31576f;
     color: white;
     border: none;
     border-radius: 50px;
@@ -57,7 +57,7 @@
 }
 
 .search-button:hover {
-    background-color: #0056b3;
+    background-color: #4b6b8d;
 }
 
 .search-button i {

@@ -13,31 +13,35 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/descricao.css">
     <link rel="icon" href="../imagens/log.png" type="image/x-icon">
-    <title>Entrar</title>
+    <title>Inscreva-se</title>
 </head>
 
 <body>
 
     <div class="container">
         <div class="image-container">
-            <img src="../imagens/login.jpg" alt="Login" style="border-radius: 10px;">
+            <img src="../imagens/signup.jpg" alt="Login" style="border-radius: 10px;">
         </div>
 
         <div class="login-container">
-            <p>Bem-vindo novamente ao <img src="../imagens/logotipo.png" style="max-width: 100px;" alt="Logotipo"></p>
+            <p>Bem-vindo ao <img src="../imagens/logotipo.png" style="max-width: 100px;" alt="Logotipo"></p>
 
             <button class="facebook">
-                <i class="bi bi-facebook"></i>Entrar com o Facebook
+                <i class="bi bi-facebook"></i>Inscreva-se com o Facebook
             </button>
 
             <button class="google">
-                <i class="bi bi-google"></i>Entrar com o Google
+                <i class="bi bi-google"></i>Inscreva-se com o Google
             </button>
 
             <div class="separator">
                 <span>ou</span>
             </div>
             <form>
+                <div class="input-group">
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" id="user" name="nome" placeholder="Digite seu nome">
+                </div>
                 <div class="input-group">
                     <i class="bi bi-envelope-fill"></i>
                     <input type="email" id="email" name="email" placeholder="Digite seu email">
@@ -50,13 +54,13 @@
                 <div class="options">
 
                     <label>
-                        <input type="checkbox" name="dados"> Lembrar dos meus dados
+                        <input type="checkbox" name="dados"> Ao criar uma conta, concordo com nossos 
+                      <u>Termos de Uso</u> e <u>Política de Privacidade</u>
                     </label>
-                    <a href="#">Esqueceu a senha?</a>
                 </div>
-                <button class="login-btn" type="submit">Entrar</button>
+                <button class="login-btn" type="submit">Criar Conta</button>
             </form>
-            <p>Não possui uma conta? <a href="../pages/singup.html">Inscreva-se</a></p>
+            <p>Já possui uma conta? <a href="../pages/login.html">Entrar</a></p>
         </div>
     </div>
 <script src="../senha.js"></script>
