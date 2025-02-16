@@ -1,6 +1,9 @@
 # SkyRota 🌍✈️  
 Plataforma para encontrar e reservar destinos de viagem de forma rápida e intuitiva.
 
+# Preview do site
+https://grazibit.github.io/SkyRota/
+
 ## 🚀 Pitch
 link do vídeo:  https://drive.google.com/file/d/1RxUv7l438rJc7uRufmA-KnE-PDECS03i/view?usp=drivesdk
 
